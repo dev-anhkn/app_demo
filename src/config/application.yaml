@@ -1,0 +1,27 @@
+server:
+  path: /v1/advisors
+
+
+chat_application:
+  rest_api:
+    title: Chat Application RestAPI
+    description: Chat Application RestAPI
+    version: 1.0.0
+    docs_url: /docs
+    redoc_url: /redoc
+    uvicorn:
+      host: 127.0.0.1
+      port: 8000
+      reload: false
+  datasource:
+    postgres:
+      host: "192.168.71.73"
+      port: 5432
+      username: "u_chats"
+      password: "u_chats"
+      database: "db_chats"
+      pool:
+        pool_name: chat_application_pool
+        min_size: 1
+        max_size: 10
+

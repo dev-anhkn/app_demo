@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from starlette.responses import JSONResponse
 
-from domain.req.chat import UserQueryRequest
+from src.domain.req.chat import UserQueryRequest
 
 router = APIRouter(prefix="/chat", tags=["chat"])
 
